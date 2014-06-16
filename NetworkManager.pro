@@ -23,7 +23,11 @@ TEMPLATE            = app
 
 #-------------------------------------------------
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    muosl/NetworkManager.cpp \
+    muosl/Logger.cpp
 
-HEADERS += \
-    main.h
+HEADERS += main.h \
+    headers.h \
+    muosl/NetworkManager.h \
+    muosl/Logger.h
